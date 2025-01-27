@@ -1,159 +1,77 @@
-/* container */
 .container {
-    margin: auto;
     width: min(100%, 1440px);
-    padding-top: 138.4px;
 }
 
-/* header */
-.header {
-    background-color: #372D23;
+header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 32px 80px;
-    margin: auto;
-    position: fixed;
-    max-width: inherit;
-    width: inherit;
-    left: 50%;
-    transform: translateX(-50%);
-    top: o;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: #F17008;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.header_ul {
+header img {
+    width: 100px;
+}
+
+.navbar {
     display: flex;
-    column-gap: 48px;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
 }
 
-.header_li_link_active {
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    color: #ED6C30;
-
-}
-
-.header_li_link {
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    color: #FCC21B;
-}
-
-/* section */
+/* section1 */
 .section1 {
+    background-image: url(../imiges/cover.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 640px;
-    /* position: relative; */
-    /* amas rom vwer fotos ukan gadadis hederi */
 }
 
-.section1_cover {
-    height: 100%;
-    width: 100%;
-}
-
-.section1_article {
-    position: absolute;
-    width: calc(100% - 762px);
-    padding: 34px 40px;
-    background-color: #FCC21B;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.section1-box {
+    width: 762px;
     height: 208px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCC21B;
 }
 
-.section1_article_title {
-    font-family: Inter;
+.secttion1-article {
+    font-family: "Inter", serif;
+    color: #FFFFFF;
+}
+
+.section1-title {
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
-    color: #FFFFFF;
-    text-shadow: 0px 6px 4px 0px #372D23;
 }
 
-.section1-article_button {
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
-    color: #FFFFFF;
-    box-shadow: 0px 2px 4px 0px #000000D9;
-    margin-top: 32px;
-}
-
-.section2 {
-    margin: auto;
-    padding: 100px 120px;
-}
-
-.section2_article {
-    position: absolute;
-    width: calc(100% - 1200px);
-    margin-left: 100px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.section2-article_title {
-    font-family: Inter;
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 48px;
-    color: #372D23;
-    padding-bottom: 40px;
-}
-
-.section2_article_p {
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #855C52;
-}
-
-.section2-article_button {
-    width: 211px;
+.section1-button {
+    width: 224px;
     height: 52px;
-    margin-top: 40px;
-    margin-bottom: 24px;
-    top: 324px;
-    font-family: Inter;
+    border: 3px solid black;
+    box-shadow: 0px 2px 4px 0px #000000D9;
+    border-radius: 8px;
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
-    color: #FFFFFF;
-    background-color: #ED6C30;
-}
-
-.footer {
-    width: min(100%, 1440px);
-    margin: auto;
-    top: 1376px;
-    padding: 32px 80px;
-    background-color: #372D23;
-}
-
-.footer_li_link {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
     text-align: center;
-    color: #FCC21B;
-    margin: 8px;
+    color: #000000;
+    background-color: #FFFFFF;
 }
 
-.h5 {
-    display: inline-block;
-    vertical-align: top;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: center;
-    color: #FFFFFF;
-}
